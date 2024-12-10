@@ -1,16 +1,18 @@
+import { Navbar } from "@/components";
+import Footer from "@/components/layout/footer/Footer";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const montserrat = localFont({
+  src: [
+    { path: "./fonts/Montserrat-Regular.woff2", weight: "400" },
+    { path: "./fonts/Montserrat-Medium.woff2", weight: "400" },
+    { path: "./fonts/Montserrat-Semibold.woff2", weight: "600" },
+    { path: "./fonts/Montserrat-Bold.woff2", weight: "700" },
+    { path: "./fonts/Montserrat-Black.woff2", weight: "900" },
+  ],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="uk-UA">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
