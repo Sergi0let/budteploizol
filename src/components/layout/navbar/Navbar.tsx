@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleToggleMenu = () => setShowMenu((prev) => !prev);
-  // const handleCloseMenu = () => setShowMenu(false);
+  // const handleCloseMenu = () => setShowMennu(false);
 
   return (
     <header className="bg-red sticky top-0 z-50 h-[60px] bg-white shadow-lg">

@@ -7,8 +7,8 @@ import "./globals.css";
 const montserrat = localFont({
   src: [
     { path: "./fonts/Montserrat-Regular.woff2", weight: "400" },
-    { path: "./fonts/Montserrat-Medium.woff2", weight: "400" },
-    { path: "./fonts/Montserrat-Semibold.woff2", weight: "600" },
+    { path: "./fonts/Montserrat-Medium.woff2", weight: "500" },
+    { path: "./fonts/Montserrat-SemiBold.woff2", weight: "600" },
     { path: "./fonts/Montserrat-Bold.woff2", weight: "700" },
     { path: "./fonts/Montserrat-Black.woff2", weight: "900" },
   ],
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="uk-UA">
       <body
-        className={`${montserrat.variable} antialiased flex flex-col min-h-screen`}
+        className={`${montserrat.variable} flex min-h-screen flex-col antialiased`}
       >
         <Navbar />
         <main className="flex-1">{children}</main>
