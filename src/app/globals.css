@@ -5,6 +5,11 @@
 body {
   font-family: var(--font-montserrat), sans-serif;
   color: #000;
+  overflow-x: hidden;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
 }
 
 @layer utilities {

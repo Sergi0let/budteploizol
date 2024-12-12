@@ -1,8 +1,20 @@
+import { cn } from "@/lib/utils";
 import { Phone } from "lucide-react";
 
-const PhoneBlock = ({ hideText }: { hideText?: boolean }) => {
+const PhoneBlock = ({
+  hideText,
+  className,
+}: {
+  hideText?: boolean;
+  className?: string;
+}) => {
   return (
-    <div className="md:text-md flex h-full items-center text-nowrap text-xs text-neutral-300">
+    <div
+      className={cn(
+        "md:text-md flex h-full items-center text-nowrap text-xs text-neutral-300",
+        className,
+      )}
+    >
       <a
         href="tel:+380674869044"
         className="group mr-4 flex items-center gap-1 transition-colors hover:text-white md:gap-3"

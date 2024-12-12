@@ -1,11 +1,14 @@
-import { PhoneBlock, SocialList } from "@/components";
+import { Logo, PhoneBlock, SocialList } from "@/components";
 
 const Footer = () => {
   return (
     <footer className="bg-dark-grey text-white">
       <div className="screen-max-width">
         <div className="flex flex-col items-center justify-between space-y-4 py-10 md:flex-row">
-          <p className="col-span-2">&copy; 2021 Footer</p>
+          <div className="col-span-2 space-y-2">
+            <Logo />
+            <div>ТОВ Торговий дім &quot;БУДТЕПЛОІЗОЛ&quot;</div>
+          </div>
 
           <div className="col-start-8">
             <PhoneBlock hideText={false} />
