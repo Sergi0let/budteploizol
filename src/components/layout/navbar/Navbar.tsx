@@ -39,7 +39,7 @@ const Navbar = () => {
                   className="block p-2 transition-colors duration-500 md:hover:bg-stroke md:hover:text-blue-600"
                   href={"/"}
                 >
-                  Коврики (карематы)
+                  Коврики (каремати)
                 </Link>
               </li>
               <li>

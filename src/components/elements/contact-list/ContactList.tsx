@@ -2,9 +2,9 @@ import { PhoneBlock, SocialList } from "@/components";
 
 const ContactList = () => {
   return (
-    <aside className="bg-[#333333]">
+    <aside className="bg-dark-grey">
       <div className="screen-max-width flex h-[60px] justify-between">
-        <PhoneBlock />
+        <PhoneBlock hideText />
         <SocialList />
       </div>
     </aside>

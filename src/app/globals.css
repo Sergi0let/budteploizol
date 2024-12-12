@@ -13,7 +13,7 @@ body {
     font-weight: 700;
   }
   .h2 {
-    font-size: clamp(32px, 12.8598px + 2.4922vw, 48px);
+    font-size: clamp(26px, 12.8598px + 2.4922vw, 36px);
     font-weight: 700;
   }
   .text-balance {
@@ -49,6 +49,33 @@ body {
   }
 }
 
+/* Swiper slider styles */
+.swiper-wrapper {
+  padding-bottom: 60px;
+}
+.swiper-pagination {
+  display: block;
+}
+.product-slider-prev,
+.product-slider-next {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 8px !important;
+}
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+  .product-slider-prev,
+  .product-slider-next {
+    display: flex;
+  }
+}
+/* End of Swiper slider styles */
 @layer base {
   :root {
     --background: 0 0% 100%;
